@@ -1,0 +1,40 @@
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { Container } from './styles'
+import './{{pascalCase name}}.scss'
+
+
+class {{pascalCase name}} extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+
+    }
+  }
+
+  render(){
+    return(
+      <Container>
+        <div className="{{pascalCase name}}">{{ pascalCase name }}</div>
+      </Container>
+    )
+  }
+}
+
+{{pascalCase name}}.defaultProps = {
+
+}
+
+{{pascalCase name}}.propTypes = {
+
+}
+
+const mapStateToProps = state => {
+  return {
+    initial:[]
+  }
+}
+
+export default connect(mapStateToProps)({{pascalCase name}})
